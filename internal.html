@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS</title>
+</head>
+<body>
+    
+    <div class="body">
+    <em><b><h1>Cat Photo Gallery</h1></b></em>
+    <div class="contaier">
+
+        <div class="cat-gallery">
+        <div class="pic box">
+            <img src="imgs/maine.jpg" alt="">
+            <p>Maine Coon</p>
+        </div>
+        <div class="pic box1">
+            <img src="imgs/siamese.jpg" alt="">
+            <p>Siamese</p>
+        </div>
+        <div class="pic box2">
+            <img src="imgs/shorthair.webp" alt="">
+            <p>British Shorthair</p>
+        </div>
+        <div class="pic box3">
+            <img src="imgs/norway.jpg" alt="">
+            <p class="cat">Norwegian</p>
+        </div>
+        <div class="pic box4">
+            <img src="imgs/persian.jpg" alt="">
+            <p class="cat">Persian</p>
+        </div>
+        <div class="pic box5">
+            <img src="imgs/siberian.jpg" alt="">
+            <p class="cat1">Siberian</p>
+        </div>
+        <div class="pic box6">
+            <img src="imgs/rugfin.jpg" alt="">
+            <p class="cat1">Ragamuffin</p>
+        </div>
+
+        <div class="pic box7">
+            <img src="imgs/toyger.jpg" alt="">
+            <p class="cat1">Toyger</p>
+        </div>
+
+        <div class="pic box8">
+            <img src="imgs/korat.jpg" alt="">
+            <p class="cat1">Korat</p>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+
+<style>
+    *{
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    input{
+        display: none;
+    }
+
+    .body{
+        width: 100%;
+        text-align: center;
+    }
+
+    h1{
+        font-weight: 500;
+        font-size: 35px;
+        position: relative;
+        margin: 40px 0;
+    }
+
+    .pusa{
+        text-align: center;
+    }
+
+    .top-content{
+        background-color: rgb(243, 243, 243);
+        width: 90%;
+        margin: 0 auto 20px auto;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        box-shadow: 3px 3px 5px lightgray;
+        border-radius: 5px;
+    }
+
+    h3{
+        height: 100%;
+        background-color: rgb(227, 226, 226);
+        line-height: 60px;
+        padding: 0 50px;
+    }
+    
+    label{
+        display: inline-block;
+        height: 100%;
+        margin: 0 20px;
+        font-size: 20px;
+        line-height: 60px;
+    }
+    
+    .cat-gallery{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .pic{
+        position: relative;
+        height: 230px;
+        box-shadow: 3px 3px 5px lightgray;
+        border-radius: 10px;
+    }
+
+    .pic img{
+        width: 100%;
+        height: 99%;
+        border-radius: 10px;
+    }
+
+</style>
+</html>
